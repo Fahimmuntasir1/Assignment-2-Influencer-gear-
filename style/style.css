@@ -8,13 +8,14 @@
     font-family: 'Poppins', sans-serif;
 }
 /* body{
-    color: #fff;
+    background-color: #AAAAAA;;
     scroll-behavior: smooth;
 } */
 .container{
     width: 1200px;
     margin: 0 auto;
 }
+
 .primary-btn{
     width: 196px;
     height: 44px;
@@ -23,6 +24,11 @@
     border-radius: 41px;
     border: 0;
     font-size: 16px;
+}
+.middle-section{
+    width: 1000px;
+    margin: 0 auto;
+    margin-bottom: 100px;
 }
 .horizentle-rule{
     color: #E02C6D;
@@ -61,14 +67,62 @@ Header Style starts from now!
     margin-top: 80px;
 }
 /* community style stats */
-.community{
-    width: 1000px;
-    margin: 0 auto;
-    margin-bottom: 100px;
-}
 .community-links{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     padding: 30px 0;
+}
+/* collection style starts */
+.collection-section .collection-title{
+    text-align: center;
+    font-size: 28px;
+    padding: 10px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+.collection-section .cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-between;
+    grid-gap: 30px;
+}
+.collection-section .cards .card{
+    width: 315px;
+    height: 468px;
+    padding: 10px;
+    box-shadow: 0 30px 35px rgba(0, 0, 0, 0.226);
+    border-radius: 5px;
+}
+.collection-section .cards .card img{
+    width: 100%;
+    border-radius: 5px;
+}
+.cards .card .product-title{
+    font-size: 23px;
+    font-weight: 400;
+    margin: 5px 0;
+}
+.cards .card .buy-btn{
+    background-color: #E02C6D;
+    color: #fff;
+    border-radius: 10px;
+    border: 0;
+    padding: 2px 7px;
+    margin: 10px 0;
+    cursor: pointer;
+}
+.cards .card .ratings .rate{
+    color: #ffb86c;
+}
+.cards .card .ratings .rate-point{
+    font-weight: 800;
+    margin: 0 10px;
+}
+.collection-section .see-more-btn{
+    text-align: right;
+    color: #E02C6D;
+    margin-top: 50px;
+    font-weight: bold;
+    cursor: pointer;
 }
