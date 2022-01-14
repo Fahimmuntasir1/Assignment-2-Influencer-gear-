@@ -126,3 +126,26 @@ Header Style starts from now!
     font-weight: bold;
     cursor: pointer;
 }
+/* footer section srarts */
+footer{
+    background-color: #0A0826;
+    color: white;
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+footer .footer-title{
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+footer .icons{
+    margin-top: 5px;
+}
+footer .icons .social-icon{
+    background-color: rgba(255, 255, 255, 0.089);
+    border-radius: 50%;
+    padding: 4px;
+    margin-right: 5px;
+}
