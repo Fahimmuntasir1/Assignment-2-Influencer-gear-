@@ -7,24 +7,12 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
-/* body{
-    background-color: #AAAAAA;;
-    scroll-behavior: smooth;
-} */
 .container{
     width: 1200px;
     margin: 0 auto;
 }
 
-.primary-btn{
-    width: 196px;
-    height: 44px;
-    background-color: #E02C6D;
-    color: #fff;
-    border-radius: 41px;
-    border: 0;
-    font-size: 16px;
-}
+
 .middle-section{
     width: 1000px;
     margin: 0 auto;
@@ -36,13 +24,38 @@
 /* --------------------------
 Header Style starts from now!
 ------------------------ */
+.nav-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 40px 50px 0;
+}
+.nav-area ul{
+    display: flex;
+}
+.nav-area ul li{
+    list-style: none;
+    margin-right: 20px;
+}
+.nav-area ul li a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+}
+.nav-area ul li a:hover{
+    color: #e61e67;
+}
+.nav-area ul .icons .fai{
+    margin-right: 5px;
+}
 .all-content{
     display: flex;
     justify-content: space-around;
+    align-items: center;
     margin-bottom: 100px;
 }
 .header-left{
-    margin-top: 145px;
+    margin-top: 135px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -62,9 +75,31 @@ Header Style starts from now!
     line-height: 24px;
     margin-bottom: 26px;
 }
+.primary-btn{
+    width: 196px;
+    height: 44px;
+    background-color: #E02C6D;
+    color: #fff;
+    border-radius: 41px;
+    border: 0;
+    font-size: 16px;
+    animation: animation2 .4s ease infinite;
+}
 .header-right .img{
     width: 100%;
-    margin-top: 80px;
+    margin-top: 70px;
+    animation: animation1 4s linear infinite;
+}
+/* animation1 */
+@keyframes animation1 {
+    50% {
+        transform: translateY(25px);
+    }
+}
+@keyframes animation2{
+    50%{
+        transform: translateX(10px);
+    }
 }
 /* community style stats */
 .community-links{
@@ -85,6 +120,7 @@ Header Style starts from now!
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     justify-content: space-between;
+    align-items: center;
     grid-gap: 30px;
 }
 .collection-section .cards .card{
@@ -126,6 +162,47 @@ Header Style starts from now!
     font-weight: bold;
     cursor: pointer;
 }
+/* bonus section starts */
+.bonus-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.top-part .section-title{
+    text-align: center;
+    font-size: 34px;
+    margin-bottom: 10px;
+}
+.top-part .description{
+    text-align: center;
+    width: 900px;
+    margin: 0 auto;
+
+}
+.bottom-part .cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-between;
+    grid-gap: 30px;
+    width: 640px;
+    margin: 20px 0 38px 0;
+}
+.bottom-part .cards .card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 30px 35px rgba(0, 0, 0, 0.226);
+    border-radius: 10px;
+    padding: 10px;
+}
+.bottom-part .cards .card .bonus-icon{
+    font-size: 50px;
+}
+.bottom-part .cards .card  .card-title, .card-content{
+    text-align: center;
+}
 /* footer section srarts */
 footer{
     background-color: #0A0826;
@@ -148,4 +225,27 @@ footer .icons .social-icon{
     border-radius: 50%;
     padding: 4px;
     margin-right: 5px;
+}
+/* responsive design */
+/* for mobile */
+@media screen and (max-width:668px) {
+    .nav-menu .logo{
+        text-align: center;
+    }
+    .nav-area{
+        display: none;
+    }
+    .all-content{
+        display: block;
+    }
+    .header-left{
+        width: 100%;
+    }
+    .header-right{
+        width: 100%;
+    }
+    .collection-section .cards{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
 }
