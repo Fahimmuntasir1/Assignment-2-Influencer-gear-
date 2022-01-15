@@ -287,3 +287,44 @@ footer .icons .social-icon{
             display: none;
     }
 }
+/* for tablet device */
+@media only screen and (min-width:669px) and (max-width:992px) {
+    .nav-area ul li{
+        margin: 0;
+    }
+    .header-left h1{
+        margin: 20px auto;
+    }
+    .community-links{
+        width: 100%;
+    }
+    .container{
+        width: 100%;
+    }
+    .all-content{
+        display: block;
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .header-left{
+        width: fit-content;
+        margin-top: 50px;
+    }
+    .header-left .primary-btn{
+        margin: 0 auto;
+    }
+    .header-right img{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .collection-section .cards{
+        grid-template-columns: 1fr 1fr;
+    }
+    .collection-section .card{
+        margin: 0 auto;
+    }
+    .collection-section .see-more-btn{
+        text-align: center;
+    }
+}
